@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Корсак](https://up.htmlacademy.ru/adaptive/17/user/1054987).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://up.htmlacademy.ru/adaptive/17/user/87930).
 
 ---
 
