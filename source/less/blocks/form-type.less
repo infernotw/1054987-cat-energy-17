@@ -1,0 +1,60 @@
+.form-type {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 45px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #222222;
+  line-height: 18px;
+}
+
+.form-type--radio:last-child {
+  margin-bottom: 0;
+}
+
+.form-type::before {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 50%;
+  margin-top: -3px;
+  width: 12px;
+  height: 21px;
+  border-right: 1px solid #68b738;
+  border-bottom: 1px solid #68b738;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.form-type--radio::before {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #68b738;
+  margin-top: 0;
+}
+
+.form-type::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+}
+
+.form-type--radio::after {
+  border-radius: 50%;
+}
+
+.form-type--checkbox {
+  margin-bottom: 4px;
+}
