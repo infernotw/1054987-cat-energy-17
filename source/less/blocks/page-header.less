@@ -1,0 +1,32 @@
+.page-header {
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__logo {
+  width: 100%;
+  max-width: 190px;
+  display: block;
+}
+
+.page-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.page-header--background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  min-height: 306px;
+  width: 100%;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: #63a73a;
+  z-index: -1;
+  background-position: bottom;
+}

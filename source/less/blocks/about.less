@@ -1,0 +1,61 @@
+.about {
+  margin-bottom: 10px;
+}
+
+.about__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.about__column {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.about__field {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+.about__field--border {
+  padding: 15px 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.about__field input[type="checkbox"],
+.about__field input[type="radio"] {
+  display: none;
+}
+
+.about__field input[type="checkbox"]:checked + label::before,
+.about__field input[type="radio"]:checked + label::before {
+  display: block;
+}
+
+.about__textarea {
+  width: 100%;
+  padding: 14px 13px;
+  height: 151px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.about__text {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 14px;
+}

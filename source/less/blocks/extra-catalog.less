@@ -1,0 +1,82 @@
+.extra-catalog {
+  margin-bottom: 30px;
+}
+
+.extra-catalog__container {
+  display: block;
+  width: 100%;
+  /* max-width: 320px; */
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.extra-catalog__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  position: relative;
+  display: inline-block;
+  padding-right: 22px;
+  margin-bottom: 35px;
+  margin-top: 0;
+  background: #ffffff;
+}
+
+.extra-catalog__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+  height: 3px;
+  background-color: #68b738;
+  z-index: -1;
+}
+
+.extra-catalog__row {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin: 0 -20px;
+}
+
+.extra-catalog__column {
+  max-width: 100%;
+  flex: 0 0 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.extra-catalog__prize {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 290px;
+  width: 100%;
+  padding: 50px 10px;
+  text-align: center;
+  color: #ffffff;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #68b738;
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.extra-catalog__prize svg {
+  fill: #ffffff;
+  display: block;
+  margin-top: 13px;
+}
+
+.extra-catalog__to-do {
+  max-width: 150px;
+  margin: 0;
+  line-height: 20px;
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 14px;
+}
