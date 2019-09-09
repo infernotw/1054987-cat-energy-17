@@ -77,21 +77,124 @@
   font-size: 16px;
   background: #f2f2f2;
   z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+    height: 12px;
+    width: 37px;
+    top: 50%;
+    right: -28px;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.2s;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    right: -36px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.program__button::after {
-  content: "";
-  position: absolute;
-  background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
-  height: 12px;
-  width: 37px;
-  top: 50%;
-  right: -28px;
-  transform: translateY(-50%);
-  z-index: -1;
-  transition: 0.2s;
+@media (min-width: @tablet-width) {
+  .program__container {
+    /* max-width: 768px; */
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .program {
+    padding: 77px 315px 58px 52px;
+    margin-bottom: 30px;
+  }
+
+  .program__title {
+    padding-left: 0;
+    margin-bottom: 25px;
+    font-size: 36px;
+  }
+
+  .program__description {
+    padding-bottom: 27px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .program__button {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+
+  .program__img {
+    width: 200px;
+    height: 200px;
+    top: 90px;
+    right: 60px;
+  }
+
+  .program__icon {
+    height: 100%;
+
+    &--slim {
+      width: 69%;
+      height: 100%;
+      top: 42%;
+    }
+
+    &--pro {
+      width: 133%;
+      height: 100%;
+    }
+  }
 }
 
-.program__button:hover::after {
-  right: -36px;
+@media (min-width: @desktop-width) {
+  .program__container {
+    max-width: 1300px;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .program {
+    padding: 80px 55px 58px;
+  }
+
+  .program__img {
+    width: 100px;
+    height: 100px;
+    top: 45px;
+    right: inherit;
+  }
+
+  .program__title {
+    padding-left: 162px;
+    margin-bottom: 70px;
+  }
+
+  .program__description {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+
+  .program__item {
+    max-width: 50%;
+    box-sizing: border-box;
+
+    &:nth-child(odd) {
+      padding-right: 40px;
+    }
+
+    &:nth-child(even) {
+      padding-left: 40px;
+    }
+  }
 }

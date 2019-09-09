@@ -14,8 +14,39 @@
   color: #ffffff;
   font-size: 16px;
   font-family: "Oswald", "Arial", sans-serif;
+
+  &--small {
+    font-size: 14px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  }
+
+  &--grey {
+    background-color: #f2f2f2;
+    color: #444444;
+
+    &:hover,
+    &:focus {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: #c6c6c6;
+    }
+  }
 }
 
-.button--small {
-  font-size: 14px;
+@media (min-width: @tablet-width) {
+  .button--small {
+    font-size: 20px;
+    padding: 16px 27px;
+    width: auto;
+  }
 }

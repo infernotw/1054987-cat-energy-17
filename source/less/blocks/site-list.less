@@ -11,3 +11,47 @@
   margin: 0 -20px;
   line-height: 18px;
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+  }
+
+  .site-list__link {
+    margin: 0;
+    padding: 10px 19px;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    box-sizing: border-box;
+    line-height: 24px;
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 0;
+      height: 2px;
+      background-color: #68b738;
+      width: calc(100% - 40px);
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list__link {
+    font-size: 20px;
+  }
+}

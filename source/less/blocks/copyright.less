@@ -4,6 +4,15 @@
   align-items: center;
   padding: 15px 0;
   text-decoration: none;
+
+  &:hover svg,
+  &:focus svg {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }
 
 .copyright__link span {
@@ -18,6 +27,12 @@
   fill: #666666;
 }
 
-.copyright__link:hover svg {
-  fill: #68b738;
+@media (min-width: @tablet-width) {
+  .copyright__link {
+    justify-content: flex-end;
+  }
+
+  .copyright__link span {
+    margin-right: 10px;
+  }
 }

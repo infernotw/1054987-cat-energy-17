@@ -26,3 +26,48 @@
   margin-top: 0;
   padding-top: 28px;
 }
+
+@media (min-width: @tablet-width) {
+  .page-main__container {
+    /* max-width: 768px; */
+    padding: 0 30px;
+
+    &--border {
+      border: none;
+    }
+
+    &--add {
+      padding: 0 70px;
+    }
+  }
+
+  .page-main__wrapper {
+    /* max-width: 768px; */
+    padding: 0 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .page-main__title {
+    margin-bottom: 55px;
+    padding-top: 55px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__container {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+
+  .page-main__title {
+    padding-top: 20px;
+    margin-bottom: 57px;
+  }
+
+  .page-main--overflow {
+    overflow: visible;
+  }
+}
