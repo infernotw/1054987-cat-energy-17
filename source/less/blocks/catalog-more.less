@@ -1,6 +1,6 @@
 .catalog-more {
   position: relative;
-  margin-top: 77px;
+  margin-top: 80px;
   text-align: center;
   padding-bottom: 22px;
   height: 100%;
@@ -26,12 +26,14 @@
   color: #111111;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-bottom: -4px;
 }
 
 .catalog-more__description {
   font-size: 12px;
-  margin-bottom: 23px;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -61,7 +63,18 @@
     font-size: 16px;
     max-width: 180px;
     width: 100%;
-    margin: 0 auto 85px;
+    margin: 0 auto 88px;
     line-height: 20px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-more__title {
+    margin: 0 auto 25px;
+  }
+
+  .catalog-more__description {
+    margin: 0 auto 82px;
   }
 }

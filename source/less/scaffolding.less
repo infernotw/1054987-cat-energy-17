@@ -30,7 +30,7 @@ img {
   max-width: 100%;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -43,8 +43,9 @@ img {
   overflow: hidden;
 }
 
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  padding: 0;
+@media (min-width: @tablet-width) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
