@@ -22,14 +22,14 @@
 
 .extra-list__item {
   border-bottom: 1px solid #d9d9d9;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 17px;
 }
 
 .extra-list__name {
   font-weight: 400;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   margin-top: 0;
   color: #222222;
   line-height: 18px;
@@ -42,6 +42,7 @@
   border-collapse: collapse;
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
+  line-height: 14px;
 }
 
 .extra-list__price {
@@ -59,9 +60,13 @@
     margin: 0 -30px;
   }
 
-  .extra-list__column--wrap {
-    max-width: 50%;
-    flex: 0 0 50%;
+  .extra-list__column {
+    padding: 0 30px;
+
+    &--wrap {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
   }
 
   .extra-list__item {
@@ -72,8 +77,8 @@
   }
 
   .extra-list__name {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .extra-list__table {
@@ -125,7 +130,9 @@
 
   .extra-list__value {
     text-align: left;
+    width: 84%;
   }
+
 
   .extra-list__price {
     width: 17%;
