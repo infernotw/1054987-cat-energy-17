@@ -16,8 +16,8 @@
   box-sizing: border-box;
 }
 
-.about__column input[type="checkbox"]:focus+label::after,
-.about__column input[type="radio"]:focus+label::after {
+.about__column input[type="checkbox"]:focus + label::after,
+.about__column input[type="radio"]:focus + label::after {
   outline: 1px solid #4d90fe;
 }
 
@@ -36,13 +36,13 @@
   }
 }
 
-.about__field input:disabled+label {
+.about__field input:disabled + label {
   opacity: 0.3;
   outline: none;
 }
 
-.about__field input[type="checkbox"]:checked+label::before,
-.about__field input[type="radio"]:checked+label::before {
+.about__field input[type="checkbox"]:checked + label::before,
+.about__field input[type="radio"]:checked + label::before {
   display: block;
 }
 
