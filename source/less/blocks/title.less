@@ -7,3 +7,25 @@
   margin: 0 0 40px;
   padding-top: 28px;
 }
+
+@media (min-width: @tablet-width) {
+  .title {
+    font-size: 60px;
+    padding: 55px 0 0;
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 1299px) and (min-width: @tablet-width) {
+  .title--ident {
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .title {
+    padding-top: 20px;
+    margin-bottom: 57px;
+  }
+}

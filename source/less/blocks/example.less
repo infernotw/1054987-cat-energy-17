@@ -40,15 +40,15 @@
   max-width: none;
   margin-left: -20px;
   display: block;
+
+  &--after {
+    display: none;
+  }
 }
 
 .example__picture {
   max-width: 280px;
   margin: 0 auto;
-}
-
-.example__img--after {
-  display: none;
 }
 
 .example__toggles {
@@ -82,13 +82,231 @@
   border-radius: 50px;
 }
 
-.example__trigger::after {
+.example__trigger:hover,
+.example__trigger:focus {
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.example__trigger:active {
+  box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.25);
+  border: 2px solid #68b738;
+}
+
+.example__field::after {
   content: "";
   position: absolute;
   left: 5px;
-  top: 4px;
+  right: 5px;
+  top: 35%;
   width: 35px;
   height: 6px;
   border-radius: 50px;
   background-color: #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    border-top: 1px solid #d9d9d9;
+    background: linear-gradient(to top, #f2f2f2 42.7%, #ffffff 30%);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 42.6%;
+      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      z-index: 0;
+    }
+  }
+
+  .example__wrapper {
+    /* max-width: 768px; */
+    padding: 0 30px;
+  }
+
+  .example__title {
+    padding-top: 43px;
+    margin-bottom: 70px;
+    font-size: 60px;
+  }
+
+  .example__description {
+    margin-bottom: 28px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .example__spending {
+    max-width: 192px;
+    margin: 0;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__picture {
+    margin-left: 15px;
+    max-width: inherit;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    height: 560px;
+  }
+
+  .example__img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+
+    &--after {
+      display: block;
+      clip: rect(auto, auto, auto, 338px);
+    }
+
+    &--before {
+      clip: rect(auto, 338px, auto, auto);
+    }
+  }
+
+  .example__comparison {
+    position: relative;
+    z-index: 1;
+  }
+
+  .example__toggles {
+    max-width: 575px;
+    padding: 10px 0 70px;
+  }
+
+  .example__toggle {
+    font-size: 20px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #d9d9d9;
+  }
+
+  .example__field {
+    max-width: 575px;
+    height: 6px;
+    margin: 0 25px;
+    background-color: #d9d9d9;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .example__trigger {
+    position: absolute;
+    top: -14px;
+    left: 46.5%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    border-top: none;
+
+    &::after {
+      height: 72%;
+      background: linear-gradient(to right, #f2f2f2 calc((100% + 645px) / 2), #eaeaea 50%);
+    }
+  }
+
+  .example__wrapper {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+
+  .example__row {
+    display: flex;
+    margin: 0 -40px;
+  }
+
+  .example__column {
+    max-width: 40%;
+    flex: 0 0 40%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+
+  .example__comparison {
+    max-width: 60%;
+    flex: 0 0 60%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .example__description {
+    margin-top: 148px;
+    margin-bottom: 47px;
+  }
+
+  .example__spending {
+    max-width: 100%;
+  }
+
+  .example__spending span {
+    display: inline-block;
+    margin-right: 60px;
+  }
+
+  .example__picture {
+    margin: 0 auto;
+    max-width: 100%;
+    height: 500px;
+  }
+
+  .example__img {
+    left: 50px;
+
+    &--before {
+      clip: rect(auto, 365px, auto, auto);
+    }
+
+    &--after {
+      clip: rect(auto, auto, auto, 365px);
+    }
+  }
+
+  .example__toggles {
+    margin-left: auto;
+    margin-right: 0;
+    padding: 40px 0 65px;
+  }
 }

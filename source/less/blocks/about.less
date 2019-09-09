@@ -21,14 +21,14 @@
   border: none;
   padding: 0;
   margin: 0 0 24px;
-}
 
-.about__field--border {
-  padding: 15px 20px;
-  margin-left: -20px;
-  margin-right: -20px;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
+  &--border {
+    padding: 15px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .about__field input[type="checkbox"],
@@ -58,4 +58,114 @@
   margin-bottom: 20px;
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    margin-bottom: 77px;
+  }
+
+  .about__field {
+    margin-bottom: 70px;
+
+    &--border {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 25px;
+      border: 1px solid #e6e6e6;
+    }
+
+    &--small {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .about__row {
+    margin: 0 -30px;
+  }
+
+  .about__column {
+    padding: 0 30px;
+
+    &--add-4 {
+      max-width: 50%;
+      flex: 0 0 50%;
+      padding: 0 30px;
+    }
+
+    &--add-2 {
+      max-width: 50%;
+      flex: 0 0 50%;
+      padding: 0 30px;
+    }
+  }
+
+  .about__textarea {
+    height: 173px;
+    padding: 8px 17px;
+    font-size: 20px;
+    line-height: 30px;
+    border: 1px solid #e6e6e6;
+
+    &::placeholder {
+      color: #444444;
+    }
+
+    &:hover {
+      border: 1px solid #cdcdcd;
+    }
+
+    &:active,
+    &:focus {
+      outline: 2px solid #444444;
+    }
+  }
+
+  .about__text {
+    margin: 13px 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .about__button {
+    padding: 15px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    margin-bottom: 80px;
+  }
+
+  .about__row {
+    margin: 0 -40px;
+  }
+
+  .about__column {
+    max-width: 50%;
+    flex: 0 0 50%;
+    padding: 0 40px;
+
+    &--add-4 {
+      max-width: 25%;
+      flex: 0 0 25%;
+      padding: 0 40px;
+    }
+  }
+
+  .about__field {
+    margin-bottom: 62px;
+
+    &--small {
+      margin-bottom: 30px;
+    }
+
+    &--top {
+      margin-bottom: 60px;
+      margin-top: -15px;
+    }
+  }
 }

@@ -12,8 +12,50 @@
 .social__item {
   margin: 0 16px;
   cursor: pointer;
+
+  &--dif {
+    margin: 0 24px;
+  }
 }
 
-.social__item--dif {
-  margin: 0 24px;
+.social__icon:hover,
+.social__icon:focus {
+  fill: #68b738;
+}
+
+.social__icon:active {
+  opacity: 0.4;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    border: none;
+  }
+
+  .social__icon {
+    fill: #666666;
+
+    &--vk {
+      width: 31px;
+      height: 19px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  .social__item {
+    margin: 0 10px;
+
+    &--dif {
+      margin: 0 20px;
+    }
+  }
 }
