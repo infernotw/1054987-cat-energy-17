@@ -23,7 +23,7 @@
   font-size: 16px;
   font-weight: 400;
   font-family: "Oswald", "Arial", sans-serif;
-  color: #111111;
+  color: @black;
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: -4px;
@@ -74,6 +74,12 @@
     margin: 0 auto 25px;
   }
 
+  .catalog-more__description {
+    margin: 0 auto 88px;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .catalog-more__description {
     margin: 0 auto 82px;
   }
